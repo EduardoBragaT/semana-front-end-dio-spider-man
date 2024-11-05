@@ -1,0 +1,10 @@
+@import url("/assets/css/reset.css");
+@import url("/assets/css/global.css");
+
+body {
+    background-color: var(--primary-color);
+}
+
+.spiderman-menu  {
+    padding: 1rem 0;
+}
