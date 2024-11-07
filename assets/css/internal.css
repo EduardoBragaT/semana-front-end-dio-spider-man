@@ -1,0 +1,103 @@
+@import url('./reset.css');
+@import url('./global.css');
+@import url('./components/_navigator.css');
+@import url('./components/_pills.css');
+@import url('./components/_link-button.css');
+@import url('./components/_gallery.css');
+
+.spiderman-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    height: 100vh;
+    background-color: aqua;
+}
+
+.spiderman-wrapper video {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.spiderman-wrapper .spiderman-left-column {
+    width: 100px;
+    height: 100%;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    padding-right: 50px;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.spiderman-wrapper .spiderman-main-content {
+    height: 100%;
+    width: 100%;
+    /* background-color: #808080; */
+    padding-left: 130px;
+    position: relative;
+}
+
+.spiderman-wrapper .spiderman-main-content__top {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.spiderman-wrapper .spiderman-main-content__top .spiderman-description {
+    background-color: rgba(0, 0, 0, 0.7);
+    max-width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.spiderman-wrapper .spiderman-main-content__top .spiderman-description__text p {
+    color: #fff;
+    line-height: 170%;
+}
+
+.spiderman-wrapper .spiderman-main-content__top .spiderman-description .pills{
+    margin-bottom: 20px;
+}
+
+.spiderman-wrapper .spiderman-main-content__bottom {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.spiderman-wrapper .spiderman-main-content .spiderman-logo img {
+    margin-top: 50px;
+    margin-left: 0;
+    margin-bottom: 30px;
+}
+
+
+.spiderman-wrapper .spiderman-main-content .spiderman-links {
+    padding: 20px;
+    padding-left: 0;
+}
+
+.spiderman-wrapper .spiderman-main-content .spiderman-links ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.spiderman-movie-01-01 {
+    background-image: url("../images/spiderman-tobey/movie-01/background.png");
+    background-size: cover;
+}
+
+.spiderman-movie-01-02 {
+    background-image: url("../images/spiderman-tobey/movie-02/background.png");
+    background-size: cover;
+}
+
+.spiderman-movie-01-03 {
+    background-image: url("../images/spiderman-tobey/movie-03/background.png");
+    background-size: cover;
+}

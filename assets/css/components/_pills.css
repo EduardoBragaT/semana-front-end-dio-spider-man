@@ -1,0 +1,26 @@
+/* INFO: Componente:
+    <div class="pills">
+        <ul>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+ */
+
+.pills ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.pills ul li {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 5px 15px;
+    margin: 0 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+.pills ul li:first-child{
+    margin-left: 0;
+}
