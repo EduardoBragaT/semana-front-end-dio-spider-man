@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
+    
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="SpiderMan Multiverse">
@@ -10,7 +10,8 @@
 
     <link rel="stylesheet" href="./assets/css/home-page-styles.css">
     <link rel="icon" href="./assets/images/icons/spider.svg" type="image/svg">
-
+    <script src="assets/scripts/index.js"></script>
+    
     <title>Spider Man | Multiverse</title>
 </head>
 
@@ -36,38 +37,39 @@
     </nav>
 
     <div class="spiderman-container">
-        <a href="#" class="spiderman-card" id="spider-man-01">
-            <img class="spiderman-card__background" src="/assets/images/pic-sm-bg-01.jpg">
-            <img class="spiderman-card__image" src="/assets/images/spider-man-01.png" alt="Tobey Maguire">
-            <h2 class="spiderman-card__title">Tobey Maguire</h2>
-        </a>
-        <a href="#" class="spiderman-card" id="spider-man-02">
-            <img class="spiderman-card__background" src="/assets/images/pic-sm-bg-02.jpg">
-            <img class="spiderman-card__image" src="/assets/images/spider-man-02.png" alt="Tom Holland">
-            <h2 class="spiderman-card__title">Tom Holland</h2>
-        </a>
-        <a href="#" class="spiderman-card" id="spider-man-03">
-            <img class="spiderman-card__background" src="/assets/images/pic-sm-bg-03.jpg">
-            <img class="spiderman-card__image" src="/assets/images/spider-man-03.png" alt="Andrew Garfield">
-            <h2 class="spiderman-card__title">Andrew Garfield</h2>
-        </a>
+        <div class="spiderman-cards-carousel" style="transform: translateZ(-40vw) rotateY(0deg);">
+            <a href="#" class="spiderman-card" id="spider-man-01">
+                <img class="spiderman-card__background" src="/assets/images/pic-sm-bg-01.jpg">
+                <img class="spiderman-card__image" src="/assets/images/spider-man-01.png" alt="Tobey Maguire">
+                <h2 class="spiderman-card__title">Tobey Maguire</h2>
+            </a>
+            <a href="#" class="spiderman-card" id="spider-man-02">
+                <img class="spiderman-card__background" src="/assets/images/pic-sm-bg-02.jpg">
+                <img class="spiderman-card__image" src="/assets/images/spider-man-02.png" alt="Tom Holland">
+                <h2 class="spiderman-card__title">Tom Holland</h2>
+            </a>
+            <a href="#" class="spiderman-card" id="spider-man-03">
+                <img class="spiderman-card__background" src="/assets/images/pic-sm-bg-03.jpg">
+                <img class="spiderman-card__image" src="/assets/images/spider-man-03.png" alt="Andrew Garfield">
+                <h2 class="spiderman-card__title">Andrew Garfield</h2>
+            </a>
+        </div>
     </div>
 
     <div class="spiderman-controller">
-        <div class="spiderman-controller__button spiderman-controller__button--active">
+        <div id="1" onclick="selectCarouselItem(this)" class="spiderman-controller__button spiderman-controller__button--active">
             01
         </div>
-        <div class="spiderman-controller__button">
+        <div id="2" onclick="selectCarouselItem(this)" class="spiderman-controller__button">
             02
         </div>
-        <div class="spiderman-controller__button">
+        <div id="3" onclick="selectCarouselItem(this)"  class="spiderman-controller__button">
             03
         </div>
         <div class="spiderman-controller__line">
 
         </div>
     </div>
-    <script defer src="assets/scripts/card-hover-animation.js"></script>
 </body>
 
 </html>
